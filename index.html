@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Kirill Herman</title>
+
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,200;1,400;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+  
+  <h1 class="invisible">.</h1>
+  
+  <div class="wrapper">
+    
+    <header>
+      
+      <nav>
+        
+        <ul class="menu">
+
+          <li class="menu__item"><a href="#about">About me</a></li>
+          <li class="menu__item"><a href="#skills">My skills</a></li>
+          <li class="menu__item"><a href="#project">Project</a></li>
+          <li class="menu__item"><a href="#code-example">Code</a></li>
+          <li class="menu__item"><a href="#experience">Work experience</a></li>
+          <li class="menu__item"><a href="#education">Education</a></li>
+          <li class="menu__item"><a href="#contact">Contact</a></li>
+
+        </ul>
+
+      </nav>
+
+    </header>
+
+    <main>
+
+      <section class="section" id="about">
+
+        <h2 class="invisible">About me</h2>
+
+        <figure class="me">
+          <img class="me__picture" src="./images/myFace.jpg" alt="">
+          <figcaption class="me__caption">It's me!</figcaption>
+        </figure>
+        
+        <article class="about-me">
+          <h2><strong>Kirill</strong> Herman</h2>
+          <p>I am 22 years old, I teach children programming and i like JavaScript. I'm interested in your course because I want to improve my programming and English skills and hope to get some development experience.</p>
+        </article>
+        
+      </section>
+
+      <section class="section skills" id="skills">
+
+        <h2 class="section__title">My skills:</h2>
+
+        <div class="skill-wrapper">
+          
+          <div class="skill-list">
+            <h3>Programming</h3>
+            <ul>
+              <li>JavaScript</li>
+              <li>HTML + CSS</li>
+              <li>Git</li>
+            </ul>
+          </div>
+
+          <div class="skill-list">
+            <h3>Language</h3>
+            <ul>
+              <li>Russian (Native)</li>
+              <li>English (A2)</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="section" id="project">
+
+        <h2 class="section__title">Project:</h2>
+
+        <div class="project">
+          
+          <div class="project-description">
+            <h3>Calculator</h3>
+            <p>Simple calculator</p>
+            <p>Just click on image, to open this project</p>
+          </div>
+
+          <a class="project-link" href="https://marmegil.github.io/Calculator/" target="_blank"><img class="calculator" src="./images/project.png" alt=""></a>
+          <p>to be continued...</p>
+        </div>
+        
+      </section>
+
+      <section class="section" id="code-example">
+        
+        <h2 class="section__title">Code example:</h2>
+        
+        <div class="code-example">
+          <pre><code class="JavaScript">
+function deepCount(a){
+
+  if (!Array.isArray(a)) return 0;
+  else return a.length + a.reduce(function(previousValue, item) {
+    return previousValue + deepCount(item);    
+  }, 0);
+   
+}
+          </code></pre>
+        </div>
+
+      </section>
+
+      <section class="section" id="experience">
+        
+        <h2 class="section__title">Work experience:</h2>
+
+        <div class="company">
+          <p class="company__property">
+            <span class="key">Company name:</span>
+            <span class="value">ITGENIO</span>
+          </p>
+          <p class="company__property">
+            <span class="key">Position:</span>
+            <span class="value">Programming teacher</span>
+          </p>
+          <p class="company__property">
+            <span class="key">Period:</span>
+            <span class="value">20.11.2020 - till now</span>
+          </p>
+        </div>
+
+      
+      </section>
+
+      <section class="section" id="education">
+        
+        <h2 class="section__title">Education place:</h2>
+
+        <div class="company">
+          <p class="company__property">
+            <span class="key">University:</span>
+            <span class="value">BSUIR</span>
+          </p>
+          <p class="company__property">
+            <span class="key">Courses:</span>
+            <span class="value">ITGENIO</span>
+          </p>
+        </div>
+
+      </section>
+
+      <section class="section" id="contact">
+        
+        <h2 class="section__title">Contact:</h2>
+
+        <ul class="contacts">
+          <li><span>Phone number:</span><a href="tel:+375445219934" target="_blank">+375445219934</a></li>
+          <li><span>Telegram:</span><a href="https://t.me/marmegil" target="_blank">+79853375108</a></li>
+          <li><span>Email:</span><a href="mailto:kirill.herman.public@gmail.com" target="_blank">kirill.herman.public@gmail.com</a></li>
+        </ul>
+      
+      </section>
+
+    </main>
+
+    <footer>
+      <p><a href="https://github.com/kirill-herman" target="_blank"><img class="" src="./images/iconmonstr-github-3.svg" alt=""> kirill-herman</a> 2022</p>
+    </footer>
+  </div>
+</body>
+</html>
